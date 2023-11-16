@@ -4,7 +4,8 @@ export class TopMenuBar {
         return web.findElement(".header__secondary-nav a:first-of-type");
     }
     clickSearch(text) {
-        this.searchButton.click();
+        web.click(this.searchButton);
+        //this.searchButton.click();
         
         return new SearchBarPanel();
     }
