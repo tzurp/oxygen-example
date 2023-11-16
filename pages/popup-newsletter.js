@@ -6,6 +6,5 @@ export class PopupNewsletter {
     close() {
         web.waitForVisible(this.closeButton);
         web.click(this.closeButton);
-        web.pause(2000);
     }
 }
