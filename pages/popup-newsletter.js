@@ -1,6 +1,6 @@
 export class PopupNewsletter {
     get closeButton() {
-        return "#newsletter-drawer button[is='close-button']"
+        return '#newsletter-drawer [aria-label="Close"]';
     }
     
     close() {
