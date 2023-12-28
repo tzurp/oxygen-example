@@ -1,7 +1,7 @@
 import * as testBase from "./test-base";
 
 var mainPage = testBase.webApp.getMainPage();
-
+log.info(`env from test is: ${env.username}`);
 web.transaction("*** closing popup");
 mainPage.popup.close();
 

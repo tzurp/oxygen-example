@@ -4,6 +4,7 @@ export class TopMenuBar {
         return web.findElement(".header__secondary-nav a:first-of-type");
     }
     clickSearch(text) {
+        log.info(`env from TopMenuBar is: ${env.username}`);
         web.click(this.searchButton);
         //this.searchButton.click();
         
